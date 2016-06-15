@@ -15,7 +15,7 @@ Find out if people are copy/pasting their auto-biographies
 
 ## Output
 - For each comparison, the script emits the percentage of word tuples which appear both in `original_file` `comparison_file`
-- So for the above example, the output would be one line saying "100%".  
+- Synonyms are treated as identical, and punctuation/whitespace are ignored
 
 ## Example
 
