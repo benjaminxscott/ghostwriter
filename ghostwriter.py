@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # NOTE: for my own clarity, I've internally used the term 'wordset' to denote a 'tuple of words'
-# DESIGN - Worst-case runtime of this program is expected to be N^M * (total_words_in_longest_file / N)^2
+# DESIGN - Worst-case runtime of this program is expected to be somewhat less than O(N^2), as in N*M * (total_words_in_longest_file / N) 
             # for N as tuple size, M as number of synonyms for each word
             # since it's iterating over all tuples in each file (words/N) ^2 and looking for N^M number of synonym replacements on each iteration
 # DESIGN - This program is expected to be memory-bounded
