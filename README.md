@@ -26,7 +26,7 @@ optional arguments:
 ```
 
 ## Output
-- For each comparison, the script emits the percentage of word tuples which appear both in `original_file` `comparison_file`
+- For each comparison, the script emits the percentage of word tuples which appear in both files
 - Synonyms are treated as identical, and punctuation/whitespace are ignored
 
 ## Example
