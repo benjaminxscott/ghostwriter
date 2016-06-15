@@ -41,7 +41,8 @@ def get_tuples(infile, tuple_size):
         # increment a count of the number of times each tuple has been observed in each file
         occurs[digest] = occurs.get(digest, 0) + 1
     
-        return (occurs, wordset_count)
+    # endfor
+    return (occurs, wordset_count)
         
 def main():
     
