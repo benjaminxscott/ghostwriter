@@ -6,7 +6,7 @@ Find out if people are copy/pasting their auto-biographies
 
 ## Usage
 - Include the names of files that you wish to compare (best results on ASCII/Unicode text files)
-- You may optionally include a list of synonyms which will be treated as identical (expected to be a newline-seperated file with synonyms seperated by spaces on the same line)
+- Also include a list of synonyms which will be treated as identical (expected to be a newline-seperated file with synonyms seperated by spaces on the same line)
 - You may optionally include the number of word tuples to compare - defaulting to 3 words at a time (larger values will provide marginally faster output, but a less precise calculation)
 
 `python ghostwriter.py original_file comparison_file [-s synonym_file] [-n number_of_word_tuples]`
@@ -17,13 +17,10 @@ Find out if people are copy/pasting their auto-biographies
 
 ## Example
 
-`python ghostwriter.py original_file comparison_file -s synonym_file -n 3`
+`python ghostwriter.py synonym_file original_file comparison_file -n 3`
 
 ```
-  Replacing synonyms as defined in synonym_file
-  Comparing number_of_word_tuples at a time
-  
-  original_file|comparison_file: 50% similar
+  original_file and comparison_file are 50% similar
 ```
 
 `cat synonym_file`
