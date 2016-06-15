@@ -1,5 +1,5 @@
-# poisonpen
-Find out if people are copy/pasting their scathing criticisms
+# ghostwriter
+Find out if people are copy/pasting their auto-biographies
 
 ## Installation
 - This project has no external dependencies
@@ -9,7 +9,7 @@ Find out if people are copy/pasting their scathing criticisms
 - You may optionally include a list of synonyms which will be treated as identical (expected to be a newline-seperated file with synonyms seperated by spaces on the same line)
 - You may optionally include the number of word tuples to compare - defaulting to 3 words at a time (larger values will provide marginally faster output, but a less precise calculation)
 
-`python poisonpen.py original_file comparison_file [-s synonym_file] [-n number_of_word_tuples]`
+`python ghostwriter.py original_file comparison_file [-s synonym_file] [-n number_of_word_tuples]`
 
 ## Output
 - For each comparison, the script emits the percentage of word tuples which appear both in `original_file` `comparison_file`
@@ -17,7 +17,7 @@ Find out if people are copy/pasting their scathing criticisms
 
 ## Example
 
-`python poisonpen.py original_file comparison_file -s synonym_file -n 3`
+`python ghostwriter.py original_file comparison_file -s synonym_file -n 3`
 
 ```
   Replacing synonyms as defined in synonym_file
