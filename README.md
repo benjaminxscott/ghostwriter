@@ -7,12 +7,23 @@ Find out if people are copy/pasting their auto-biographies
 - This project has no external dependencies and can be executed directly
 
 ## Usage
-`ghostwriter.py [-h] [--num_tuples NUM_TUPLES] synonym_file original_file comparison_file`
+```
+ghostwriter.py [-h] [--num_tuples NUM_TUPLES] [--verbose]
+                      synonyms original_file comparison_file
 
-- Include the names of files that you wish to compare (best results on ASCII/Unicode text files)
-- Also include a list of synonyms which will be treated as identical (expected to be a newline-seperated file with synonyms seperated by spaces on the same line)
-- You may optionally include the number of word tuples to compare - defaulting to 3 words at a time (larger values will provide marginally faster output, but a less precise calculation)
+positional arguments:
+  synonyms              list of space-seperated synonyms, (each list on a
+                        newline) to be treated identically in comparisons
+  original_file         file to compare
+  comparison_file       file to compare
 
+optional arguments:
+  -h, --help            show this help message and exit
+  --num_tuples NUM_TUPLES, -n NUM_TUPLES
+                        (advanced) number of words to compare at a time (a
+                        positive integer) (default: 3)
+  --verbose, -v         Emit more details (default: False)
+```
 
 ## Output
 - For each comparison, the script emits the percentage of word tuples which appear both in `original_file` `comparison_file`
@@ -38,3 +49,6 @@ Find out if people are copy/pasting their auto-biographies
 
 ## Other Solutions
 - The [ssdeep](http://ssdeep.sourceforge.net/usage.html) and [sdhash](http://roussev.net/sdhash/tutorial/03-quick.html) fuzzy hash algorithms address a similar use case, although they are intended to operate on binary input as opposed to prose text
+
+## Related GIF
+[![ghostwriter.gif](https://67.media.tumblr.com/347d3a152112d06d95120c4c2360f498/tumblr_n2ch03z8va1ro8ysbo1_r1_500.gif)](https://67.media.tumblr.com/347d3a152112d06d95120c4c2360f498/tumblr_n2ch03z8va1ro8ysbo1_r1_500.gif)
