@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/bschmoker/ghostwriter.svg?branch=master)](https://travis-ci.org/bschmoker/ghostwriter)
+
 # ghostwriter
 Find out if people are copy/pasting their auto-biographies
 
