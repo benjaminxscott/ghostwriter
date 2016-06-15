@@ -101,8 +101,8 @@ def main():
     for key in orig_dict.keys():
         if comp_dict.get(key):
             # increment the count of "shared" tuples
-            # DESIGN - Not sure how to handle the case where a tuple from the original document shows up multiple times in the comparison document - i.e. counting each one individually?
-            shared_count += 2 
+            # DESIGN - handle the case where a tuple from the original document shows up multiple times in the comparison document 
+            shared_count += comp_dict.get(key) + orig_dict.get(key)# count the number we've found in the comparison document, plus the one in our source document
 
     similarity = (shared_count / (unique_wordsets ) ) * 100
     
