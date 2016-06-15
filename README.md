@@ -2,7 +2,7 @@
 Find out if people are copy/pasting their auto-biographies
 
 ## Installation
-- This project has no external dependencies
+- This project has no external dependencies and can be executed directly
 
 ## Usage
 - Include the names of files that you wish to compare (best results on ASCII/Unicode text files)
@@ -22,6 +22,7 @@ Find out if people are copy/pasting their auto-biographies
 ```
   Replacing synonyms as defined in synonym_file
   Comparing number_of_word_tuples at a time
+  
   original_file|comparison_file: 50% similar
 ```
 
